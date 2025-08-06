@@ -1,3 +1,4 @@
+
 import os
 import re
 import pandas as pd
@@ -75,9 +76,11 @@ fig, ax = plt.subplots()
 sns.heatmap(heatmap_data, annot=True, fmt=".1f", cmap="YlGnBu", ax=ax)
 st.pyplot(fig)
 
-# Statistical Summary
-st.subheader("Statistical Summary")
+# Statistical Summary with P90 and P95
+st.subheader("Statistical Summary with P90 and P95")
 stats = filtered_df.groupby("endpoint")["response_time"].agg(["count", "mean", "median", "min", "max", "std"]).dropna()
+stats["p90"] = filtered_df.groupby("endpoint")["response_time"].apply(lambda x: np.percentile(x.dropna(), 90))
+stats["p95"] = filtered_df.groupby("endpoint")["response_time"].apply(lambda x: np.percentile(x.dropna(), 95))
 st.dataframe(stats)
 
 # Outlier Detection
@@ -108,3 +111,52 @@ success_counts.plot(kind="bar", stacked=True, ax=ax)
 ax.set_title("Successful vs Failed Requests per Endpoint")
 ax.set_ylabel("Count")
 st.pyplot(fig)
+
+# Additional Visualizations: Histogram, Violin, Box, Line Plots
+st.subheader("Response Time Distribution Plots")
+for endpoint in filtered_df["endpoint"].unique():
+    subset = filtered_df[(filtered_df["endpoint"] == endpoint) & (filtered_df["response_time"].notnull())]
+    if len(subset) >= 2:
+        p90 = np.percentile(subset["response_time"], 90)
+        p95 = np.percentile(subset["response_time"], 95)
+
+        # Histogram
+        fig, ax = plt.subplots()
+        sns.histplot(subset["response_time"], kde=True, ax=ax, color='skyblue')
+        ax.axvline(p90, color='orange', linestyle='--', label=f'P90: {p90:.2f} ms')
+        ax.axvline(p95, color='red', linestyle='--', label=f'P95: {p95:.2f} ms')
+        ax.set_title(f"Histogram - {endpoint}")
+        ax.set_xlabel("Response Time (ms)")
+        ax.legend()
+        st.pyplot(fig)
+
+        # Violin Plot
+        fig, ax = plt.subplots()
+        sns.violinplot(x=subset["response_time"], ax=ax, color='lightgreen')
+        ax.axvline(p90, color='orange', linestyle='--', label=f'P90: {p90:.2f} ms')
+        ax.axvline(p95, color='red', linestyle='--', label=f'P95: {p95:.2f} ms')
+        ax.set_title(f"Violin Plot - {endpoint}")
+        ax.set_xlabel("Response Time (ms)")
+        ax.legend()
+        st.pyplot(fig)
+
+        # Box Plot
+        fig, ax = plt.subplots()
+        sns.boxplot(x=subset["response_time"], ax=ax, color='lightblue')
+        ax.axvline(p90, color='orange', linestyle='--', label=f'P90: {p90:.2f} ms')
+        ax.axvline(p95, color='red', linestyle='--', label=f'P95: {p95:.2f} ms')
+        ax.set_title(f"Box Plot - {endpoint}")
+        ax.set_xlabel("Response Time (ms)")
+        ax.legend()
+        st.pyplot(fig)
+
+        # Line Plot
+        fig, ax = plt.subplots()
+        ax.plot(subset["response_time"].values, marker='o', linestyle='-', color='blue', label='Response Time')
+        ax.axhline(p90, color='orange', linestyle='--', label=f'P90: {p90:.2f} ms')
+        ax.axhline(p95, color='red', linestyle='--', label=f'P95: {p95:.2f} ms')
+        ax.set_title(f"Line Plot - {endpoint}")
+        ax.set_xlabel("Request Index")
+        ax.set_ylabel("Response Time (ms)")
+        ax.legend()
+        st.pyplot(fig)
