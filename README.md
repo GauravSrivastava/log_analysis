@@ -1,4 +1,4 @@
-# log_analysis
+# Log Analysis - Endpoint Response Time Analysis Dashboard using Pythonß
 
 ![Image not found](./images/1_Filters.png)
 
