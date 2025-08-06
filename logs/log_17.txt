@@ -1,0 +1,100 @@
+2025-08-05T20:55:05Z INFO request_id=req3099 method=DELETE endpoint=/api/patient status=404 response_time=256ms
+2025-08-05T20:55:06Z WARN request_id=req2653 method=POST endpoint=/api/prescription status=400 response_time=889ms
+2025-08-05T20:55:08Z DEBUG request_id=req3697 method=DELETE endpoint=/api/prescription status=500 response_time=1073ms
+2025-08-05T20:55:09Z ERROR request_id=req8597 method=POST endpoint=/api/doctor status=200 response_time=814ms
+2025-08-05T20:55:14Z INFO request_id=req1112 method=DELETE endpoint=/api/patient status=204 response_time=952ms
+2025-08-05T20:55:17Z ERROR request_id=req7606 method=DELETE endpoint=/api/appointment status=200 response_time=556ms
+2025-08-05T20:55:18Z ERROR request_id=req8422 method=PUT endpoint=/api/appointment status=201
+2025-08-05T20:55:21Z DEBUG request_id=req1712 method=GET endpoint=/api/doctor status=404 response_time=278ms
+2025-08-05T20:55:23Z ERROR request_id=req2960 method=PUT endpoint=/api/prescription status=500 response_time=112ms
+2025-08-05T20:55:28Z INFO request_id=req8688 method=DELETE endpoint=/api/appointment status=200
+2025-08-05T20:55:31Z INFO request_id=req1034 method=DELETE endpoint=/api/prescription status=204
+2025-08-05T20:55:35Z DEBUG request_id=req2867 method=POST endpoint=/api/appointment status=404 response_time=1041ms
+2025-08-05T20:55:36Z WARN request_id=req7798 method=PUT endpoint=/api/patient status=400 response_time=1065ms
+2025-08-05T20:55:37Z DEBUG request_id=req9977 method=PUT endpoint=/api/prescription status=500
+2025-08-05T20:55:42Z DEBUG request_id=req2936 method=DELETE endpoint=/api/prescription status=400 response_time=1112ms
+2025-08-05T20:55:46Z ERROR request_id=req8197 method=PUT endpoint=/api/appointment status=200
+2025-08-05T20:55:50Z DEBUG request_id=req1836 method=PUT endpoint=/api/patient status=204 response_time=711ms
+2025-08-05T20:55:52Z WARN request_id=req9707 method=GET endpoint=/api/patient status=404 response_time=193ms
+2025-08-05T20:55:57Z DEBUG request_id=req4044 method=DELETE endpoint=/api/appointment status=404
+2025-08-05T20:56:02Z ERROR request_id=req2921 method=GET endpoint=/api/patient status=204 response_time=892ms
+2025-08-05T20:56:05Z INFO request_id=req4790 method=GET endpoint=/api/prescription status=200
+2025-08-05T20:56:08Z ERROR request_id=req4311 method=DELETE endpoint=/api/doctor status=500 response_time=1039ms
+2025-08-05T20:56:09Z WARN request_id=req8442 method=PUT endpoint=/api/doctor status=204 response_time=483ms
+2025-08-05T20:56:12Z DEBUG request_id=req2881 method=GET endpoint=/api/prescription status=400 response_time=846ms
+2025-08-05T20:56:15Z WARN request_id=req9469 method=PUT endpoint=/api/doctor status=204 response_time=457ms
+2025-08-05T20:56:19Z WARN request_id=req1892 method=GET endpoint=/api/doctor status=400 response_time=1004ms
+2025-08-05T20:56:24Z DEBUG request_id=req4872 method=POST endpoint=/api/patient status=400 response_time=976ms
+2025-08-05T20:56:26Z DEBUG request_id=req5701 method=GET endpoint=/api/prescription status=500 response_time=918ms
+2025-08-05T20:56:30Z WARN request_id=req2869 method=DELETE endpoint=/api/patient status=400 response_time=472ms
+2025-08-05T20:56:33Z ERROR request_id=req6643 method=PUT endpoint=/api/doctor status=204 response_time=577ms
+2025-08-05T20:56:38Z ERROR request_id=req1874 method=DELETE endpoint=/api/prescription status=204 response_time=439ms
+2025-08-05T20:56:40Z INFO request_id=req3685 method=POST endpoint=/api/doctor status=204
+2025-08-05T20:56:41Z WARN request_id=req4149 method=GET endpoint=/api/doctor status=404
+2025-08-05T20:56:42Z WARN request_id=req7177 method=GET endpoint=/api/appointment status=400 response_time=575ms
+2025-08-05T20:56:44Z WARN request_id=req5966 method=PUT endpoint=/api/doctor status=500 response_time=192ms
+2025-08-05T20:56:47Z DEBUG request_id=req3624 method=PUT endpoint=/api/appointment status=500 response_time=609ms
+2025-08-05T20:56:49Z DEBUG request_id=req1304 method=GET endpoint=/api/appointment status=400 response_time=536ms
+2025-08-05T20:56:50Z INFO request_id=req5356 method=GET endpoint=/api/appointment status=204
+2025-08-05T20:56:55Z ERROR request_id=req7502 method=GET endpoint=/api/patient status=400 response_time=483ms
+2025-08-05T20:57:00Z DEBUG request_id=req2395 method=GET endpoint=/api/prescription status=500 response_time=1072ms
+2025-08-05T20:57:01Z WARN request_id=req9623 method=POST endpoint=/api/patient status=404 response_time=643ms
+2025-08-05T20:57:06Z WARN request_id=req6689 method=GET endpoint=/api/patient status=200 response_time=166ms
+2025-08-05T20:57:09Z DEBUG request_id=req7514 method=GET endpoint=/api/patient status=400 response_time=849ms
+2025-08-05T20:57:13Z WARN request_id=req8659 method=POST endpoint=/api/doctor status=404 response_time=281ms
+2025-08-05T20:57:16Z INFO request_id=req5549 method=GET endpoint=/api/patient status=201 response_time=134ms
+2025-08-05T20:57:18Z WARN request_id=req1109 method=DELETE endpoint=/api/appointment status=201 response_time=347ms
+2025-08-05T20:57:20Z DEBUG request_id=req8043 method=POST endpoint=/api/prescription status=404
+2025-08-05T20:57:22Z DEBUG request_id=req4152 method=DELETE endpoint=/api/doctor status=200 response_time=1015ms
+2025-08-05T20:57:25Z DEBUG request_id=req5146 method=GET endpoint=/api/appointment status=204 response_time=982ms
+2025-08-05T20:57:26Z ERROR request_id=req4733 method=PUT endpoint=/api/doctor status=204 response_time=494ms
+2025-08-05T20:57:30Z DEBUG request_id=req8761 method=DELETE endpoint=/api/patient status=204 response_time=198ms
+2025-08-05T20:57:33Z DEBUG request_id=req7154 method=PUT endpoint=/api/patient status=204 response_time=945ms
+2025-08-05T20:57:34Z ERROR request_id=req6136 method=DELETE endpoint=/api/prescription status=404 response_time=896ms
+2025-08-05T20:57:38Z ERROR request_id=req5399 method=PUT endpoint=/api/appointment status=204
+2025-08-05T20:57:40Z INFO request_id=req3860 method=POST endpoint=/api/prescription status=500 response_time=826ms
+2025-08-05T20:57:44Z DEBUG request_id=req2675 method=PUT endpoint=/api/prescription status=204 response_time=872ms
+2025-08-05T20:57:49Z ERROR request_id=req7329 method=GET endpoint=/api/patient status=500
+2025-08-05T20:57:50Z ERROR request_id=req8962 method=GET endpoint=/api/patient status=204 response_time=1141ms
+2025-08-05T20:57:51Z ERROR request_id=req3906 method=POST endpoint=/api/patient status=400 response_time=268ms
+2025-08-05T20:57:54Z DEBUG request_id=req9999 method=DELETE endpoint=/api/patient status=201 response_time=807ms
+2025-08-05T20:57:59Z DEBUG request_id=req1668 method=GET endpoint=/api/doctor status=500 response_time=320ms
+2025-08-05T20:58:02Z INFO request_id=req4627 method=GET endpoint=/api/doctor status=500 response_time=765ms
+2025-08-05T20:58:05Z ERROR request_id=req9590 method=DELETE endpoint=/api/appointment status=404 response_time=1071ms
+2025-08-05T20:58:08Z ERROR request_id=req3626 method=PUT endpoint=/api/prescription status=201 response_time=101ms
+2025-08-05T20:58:12Z DEBUG request_id=req9974 method=GET endpoint=/api/patient status=404 response_time=736ms
+2025-08-05T20:58:16Z ERROR request_id=req1859 method=POST endpoint=/api/prescription status=400 response_time=433ms
+2025-08-05T20:58:18Z INFO request_id=req3211 method=GET endpoint=/api/patient status=400 response_time=772ms
+2025-08-05T20:58:22Z DEBUG request_id=req7541 method=DELETE endpoint=/api/patient status=200 response_time=546ms
+2025-08-05T20:58:23Z INFO request_id=req9320 method=PUT endpoint=/api/patient status=200 response_time=820ms
+2025-08-05T20:58:27Z INFO request_id=req1881 method=DELETE endpoint=/api/patient status=404 response_time=827ms
+2025-08-05T20:58:32Z ERROR request_id=req7553 method=DELETE endpoint=/api/doctor status=400
+2025-08-05T20:58:36Z DEBUG request_id=req9349 method=GET endpoint=/api/prescription status=204
+2025-08-05T20:58:41Z INFO request_id=req3196 method=PUT endpoint=/api/patient status=201
+2025-08-05T20:58:46Z DEBUG request_id=req6453 method=POST endpoint=/api/appointment status=400
+2025-08-05T20:58:47Z ERROR request_id=req7775 method=PUT endpoint=/api/prescription status=400 response_time=536ms
+2025-08-05T20:58:51Z DEBUG request_id=req6539 method=GET endpoint=/api/appointment status=204 response_time=575ms
+2025-08-05T20:58:56Z DEBUG request_id=req6673 method=GET endpoint=/api/appointment status=400 response_time=774ms
+2025-08-05T20:59:00Z DEBUG request_id=req1305 method=DELETE endpoint=/api/doctor status=200 response_time=655ms
+2025-08-05T20:59:01Z DEBUG request_id=req8336 method=PUT endpoint=/api/doctor status=204
+2025-08-05T20:59:03Z ERROR request_id=req5674 method=DELETE endpoint=/api/appointment status=200
+2025-08-05T20:59:06Z DEBUG request_id=req5347 method=GET endpoint=/api/appointment status=400
+2025-08-05T20:59:10Z ERROR request_id=req1656 method=PUT endpoint=/api/prescription status=404
+2025-08-05T20:59:11Z WARN request_id=req9418 method=PUT endpoint=/api/doctor status=400 response_time=664ms
+2025-08-05T20:59:15Z DEBUG request_id=req7287 method=GET endpoint=/api/appointment status=201 response_time=207ms
+2025-08-05T20:59:20Z DEBUG request_id=req2897 method=PUT endpoint=/api/prescription status=201 response_time=192ms
+2025-08-05T20:59:24Z DEBUG request_id=req7012 method=PUT endpoint=/api/appointment status=204 response_time=446ms
+2025-08-05T20:59:25Z INFO request_id=req7511 method=POST endpoint=/api/appointment status=201 response_time=1077ms
+2025-08-05T20:59:26Z WARN request_id=req8550 method=GET endpoint=/api/prescription status=201 response_time=298ms
+2025-08-05T20:59:30Z WARN request_id=req2877 method=GET endpoint=/api/appointment status=404 response_time=473ms
+2025-08-05T20:59:35Z ERROR request_id=req3668 method=DELETE endpoint=/api/appointment status=201 response_time=1084ms
+2025-08-05T20:59:37Z WARN request_id=req6491 method=POST endpoint=/api/doctor status=204 response_time=855ms
+2025-08-05T20:59:41Z INFO request_id=req1619 method=DELETE endpoint=/api/appointment status=201
+2025-08-05T20:59:44Z INFO request_id=req3888 method=POST endpoint=/api/appointment status=204 response_time=1061ms
+2025-08-05T20:59:46Z WARN request_id=req1377 method=POST endpoint=/api/doctor status=500 response_time=975ms
+2025-08-05T20:59:47Z WARN request_id=req9837 method=GET endpoint=/api/appointment status=201
+2025-08-05T20:59:50Z INFO request_id=req7917 method=PUT endpoint=/api/prescription status=400 response_time=989ms
+2025-08-05T20:59:54Z ERROR request_id=req1798 method=DELETE endpoint=/api/prescription status=201
+2025-08-05T20:59:56Z INFO request_id=req6867 method=PUT endpoint=/api/prescription status=404
+2025-08-05T20:59:57Z DEBUG request_id=req9283 method=POST endpoint=/api/prescription status=500 response_time=1013ms
+2025-08-05T21:00:01Z INFO request_id=req1370 method=DELETE endpoint=/api/doctor status=204
