@@ -23,7 +23,7 @@ jobs:
 
     - name: Deploy Docker container to EC2
       run: |
-        ssh -o StrictHostKeyChecking=no ec2-user@${{ github.event.inputs.ec2_host }} << 'EOF'
+        ssh -o StrictHostKeyChecking=no ubuntu@${{ github.event.inputs.ec2_host }} << 'EOF'
           set -e
           # Clone or pull latest code
           if [ -d streamlit-app ]; then
