@@ -1,0 +1,42 @@
+name: Deploy Endpoints Analysis App to EC2
+
+on:
+  workflow_dispatch:
+    inputs:
+      ec2_host:
+        description: 'EC2 Hostname or IP'
+        required: true
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up SSH agent
+      uses: webfactory/ssh-agent@v0.7.0
+      with:
+        ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+
+    - name: Deploy Docker container to EC2
+      run: |
+        ssh -o StrictHostKeyChecking=no ec2-user@${{ github.event.inputs.ec2_host }} << 'EOF'
+          set -e
+          # Clone or pull latest code
+          if [ -d streamlit-app ]; then
+            cd streamlit-app
+            git pull
+          else
+            git clone https://github.com/GauravSrivastava/log_analysis.git streamlit-app
+            cd streamlit-app
+          fi
+
+          # Build and run Docker container
+          docker build -t streamlit-endpoint-analyzer .
+          docker stop streamlit || true
+          docker rm streamlit || true
+          docker run -d --name streamlit -p 8501:8501 streamlit-endpoint-analyzer
+        EOF
